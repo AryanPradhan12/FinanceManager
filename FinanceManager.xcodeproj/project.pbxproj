@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AD238A102C8B14B600032357 /* FinanceManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A0F2C8B14B600032357 /* FinanceManagerApp.swift */; };
-		AD238A122C8B14B600032357 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A112C8B14B600032357 /* ContentView.swift */; };
+		AD238A122C8B14B600032357 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A112C8B14B600032357 /* HomePage.swift */; };
 		AD238A142C8B14B800032357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD238A132C8B14B800032357 /* Assets.xcassets */; };
 		AD238A172C8B14B800032357 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD238A162C8B14B800032357 /* Preview Assets.xcassets */; };
 		AD238A212C8B14B800032357 /* FinanceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A202C8B14B800032357 /* FinanceManagerTests.swift */; };
 		AD238A2B2C8B14B800032357 /* FinanceManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A2A2C8B14B800032357 /* FinanceManagerUITests.swift */; };
 		AD238A2D2C8B14B800032357 /* FinanceManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A2C2C8B14B800032357 /* FinanceManagerUITestsLaunchTests.swift */; };
+		AD238A3A2C8B183900032357 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A392C8B183900032357 /* MainView.swift */; };
+		AD238A3C2C8B186500032357 /* Finance1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A3B2C8B186500032357 /* Finance1.swift */; };
+		AD238A3E2C8B187600032357 /* Finance2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A3D2C8B187600032357 /* Finance2.swift */; };
+		AD238A402C8B188700032357 /* Finance3.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A3F2C8B188700032357 /* Finance3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,7 @@
 /* Begin PBXFileReference section */
 		AD238A0C2C8B14B600032357 /* FinanceManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD238A0F2C8B14B600032357 /* FinanceManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceManagerApp.swift; sourceTree = "<group>"; };
-		AD238A112C8B14B600032357 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AD238A112C8B14B600032357 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		AD238A132C8B14B800032357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD238A162C8B14B800032357 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD238A1C2C8B14B800032357 /* FinanceManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +48,10 @@
 		AD238A262C8B14B800032357 /* FinanceManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinanceManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD238A2A2C8B14B800032357 /* FinanceManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceManagerUITests.swift; sourceTree = "<group>"; };
 		AD238A2C2C8B14B800032357 /* FinanceManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD238A392C8B183900032357 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AD238A3B2C8B186500032357 /* Finance1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance1.swift; sourceTree = "<group>"; };
+		AD238A3D2C8B187600032357 /* Finance2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance2.swift; sourceTree = "<group>"; };
+		AD238A3F2C8B188700032357 /* Finance3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finance3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,10 @@
 		AD238A0E2C8B14B600032357 /* FinanceManager */ = {
 			isa = PBXGroup;
 			children = (
-				AD238A0F2C8B14B600032357 /* FinanceManagerApp.swift */,
-				AD238A112C8B14B600032357 /* ContentView.swift */,
+				AD238A412C8B189400032357 /* MainNavigation */,
+				AD238A3F2C8B188700032357 /* Finance3.swift */,
+				AD238A3D2C8B187600032357 /* Finance2.swift */,
+				AD238A3B2C8B186500032357 /* Finance1.swift */,
 				AD238A132C8B14B800032357 /* Assets.xcassets */,
 				AD238A152C8B14B800032357 /* Preview Content */,
 			);
@@ -125,6 +135,16 @@
 				AD238A2C2C8B14B800032357 /* FinanceManagerUITestsLaunchTests.swift */,
 			);
 			path = FinanceManagerUITests;
+			sourceTree = "<group>";
+		};
+		AD238A412C8B189400032357 /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				AD238A392C8B183900032357 /* MainView.swift */,
+				AD238A0F2C8B14B600032357 /* FinanceManagerApp.swift */,
+				AD238A112C8B14B600032357 /* HomePage.swift */,
+			);
+			path = MainNavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD238A122C8B14B600032357 /* ContentView.swift in Sources */,
+				AD238A122C8B14B600032357 /* HomePage.swift in Sources */,
+				AD238A3E2C8B187600032357 /* Finance2.swift in Sources */,
+				AD238A402C8B188700032357 /* Finance3.swift in Sources */,
+				AD238A3A2C8B183900032357 /* MainView.swift in Sources */,
+				AD238A3C2C8B186500032357 /* Finance1.swift in Sources */,
 				AD238A102C8B14B600032357 /* FinanceManagerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
