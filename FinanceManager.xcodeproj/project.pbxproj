@@ -17,6 +17,11 @@
 		AD238A3A2C8B183900032357 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A392C8B183900032357 /* MainView.swift */; };
 		AD238A3C2C8B186500032357 /* FinanceAspirationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A3B2C8B186500032357 /* FinanceAspirationsView.swift */; };
 		AD238A3E2C8B187600032357 /* CurrentFinancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD238A3D2C8B187600032357 /* CurrentFinancesView.swift */; };
+		AD65FB442C96EE0200102A7C /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65FB432C96EE0200102A7C /* HomePageViewModel.swift */; };
+		AD65FB462C96F4A400102A7C /* GetHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65FB452C96F4A400102A7C /* GetHelpView.swift */; };
+		AD65FB482C96F4D000102A7C /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65FB472C96F4D000102A7C /* NotificationsView.swift */; };
+		AD65FB4A2C96FE3C00102A7C /* FinanceInterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65FB492C96FE3C00102A7C /* FinanceInterestView.swift */; };
+		AD65FB4C2C97000200102A7C /* TrendingFinanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD65FB4B2C97000200102A7C /* TrendingFinanceView.swift */; };
 		ADD4A5702C96DE5E0042B480 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD4A56F2C96DE5E0042B480 /* ProfileView.swift */; };
 		ADD4A5732C96DFD60042B480 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADD4A5722C96DFD60042B480 /* GoogleService-Info.plist */; };
 		ADD4A5762C96E1060042B480 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = ADD4A5752C96E1060042B480 /* FirebaseAuth */; };
@@ -66,6 +71,11 @@
 		AD238A392C8B183900032357 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AD238A3B2C8B186500032357 /* FinanceAspirationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceAspirationsView.swift; sourceTree = "<group>"; };
 		AD238A3D2C8B187600032357 /* CurrentFinancesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFinancesView.swift; sourceTree = "<group>"; };
+		AD65FB432C96EE0200102A7C /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
+		AD65FB452C96F4A400102A7C /* GetHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelpView.swift; sourceTree = "<group>"; };
+		AD65FB472C96F4D000102A7C /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		AD65FB492C96FE3C00102A7C /* FinanceInterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceInterestView.swift; sourceTree = "<group>"; };
+		AD65FB4B2C97000200102A7C /* TrendingFinanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingFinanceView.swift; sourceTree = "<group>"; };
 		ADD4A56F2C96DE5E0042B480 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		ADD4A5722C96DFD60042B480 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADD4A57B2C96E15D0042B480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +229,10 @@
 			children = (
 				AD238A112C8B14B600032357 /* HomePage.swift */,
 				AD238A392C8B183900032357 /* MainView.swift */,
+				AD65FB452C96F4A400102A7C /* GetHelpView.swift */,
+				AD65FB472C96F4D000102A7C /* NotificationsView.swift */,
+				AD65FB492C96FE3C00102A7C /* FinanceInterestView.swift */,
+				AD65FB4B2C97000200102A7C /* TrendingFinanceView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				ADD4A57F2C96E2540042B480 /* MainViewModel.swift */,
+				AD65FB432C96EE0200102A7C /* HomePageViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -400,8 +415,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD65FB4C2C97000200102A7C /* TrendingFinanceView.swift in Sources */,
 				AD238A122C8B14B600032357 /* HomePage.swift in Sources */,
+				AD65FB4A2C96FE3C00102A7C /* FinanceInterestView.swift in Sources */,
 				ADD4A5972C96E5470042B480 /* extensions.swift in Sources */,
+				AD65FB442C96EE0200102A7C /* HomePageViewModel.swift in Sources */,
 				ADD4A5922C96E3B50042B480 /* RegisterViewModel.swift in Sources */,
 				AD238A3E2C8B187600032357 /* CurrentFinancesView.swift in Sources */,
 				AD238A3A2C8B183900032357 /* MainView.swift in Sources */,
@@ -410,8 +428,10 @@
 				ADD4A5702C96DE5E0042B480 /* ProfileView.swift in Sources */,
 				ADD4A57C2C96E15D0042B480 /* AppDelegate.swift in Sources */,
 				ADD4A5902C96E3960042B480 /* ProfileViewModel.swift in Sources */,
+				AD65FB482C96F4D000102A7C /* NotificationsView.swift in Sources */,
 				AD238A3C2C8B186500032357 /* FinanceAspirationsView.swift in Sources */,
 				ADD4A58A2C96E33D0042B480 /* HeaderView.swift in Sources */,
+				AD65FB462C96F4A400102A7C /* GetHelpView.swift in Sources */,
 				AD238A102C8B14B600032357 /* FinanceManagerApp.swift in Sources */,
 				ADD4A58E2C96E3720042B480 /* ButtonView.swift in Sources */,
 				ADD4A58C2C96E3620042B480 /* RegisterView.swift in Sources */,

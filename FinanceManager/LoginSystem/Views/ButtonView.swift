@@ -28,7 +28,7 @@ struct ButtonView: View {
 }
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView(title: "Value", background: .blue) {
+        ButtonView(title: "Value", background: .green) {
             //Action
         }
     }

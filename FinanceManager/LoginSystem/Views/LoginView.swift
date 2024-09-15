@@ -17,9 +17,6 @@ struct LoginView: View {
                 //Header
                 HeaderView()
                 
-            
-                
-                
                 Form {
                     
                     if !viewModel.errorMessage.isEmpty {
@@ -33,7 +30,7 @@ struct LoginView: View {
                     SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    ButtonView(title: "Login", background: .blue) {
+                    ButtonView(title: "Login", background: .green) {
                         viewModel.login()
                     }
                     .padding()
