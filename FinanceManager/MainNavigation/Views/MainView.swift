@@ -8,31 +8,33 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var viewModel = MainViewModel()
     var body: some View {
-        VStack {
+        if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
             TabView {
                 
                 HomePage()
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
-                Finance1()
+                ProfileView()
                     .tabItem {
-                        Label("Finance1", systemImage: "person.circle")
+                        Label("Profile", systemImage: "person.circle")
                     }
-                Finance2()
+                FinanceAspirationsView()
                     .tabItem {
-                        Label("Finance2", systemImage: "figure.strengthtraining.traditional")
+                        Label("Financial Aspirations", systemImage: "dollarsign.arrow.circlepath")
                     }
-                Finance3()
+                CurrentFinancesView()
                     .tabItem {
-                        Label("Finance3", systemImage: "graduationcap.fill")
+                        Label("Current Finances", systemImage: "dollarsign.circle")
                     }
             }
+        } else {
+            LoginView()
         }
     }
 }
-
 #Preview {
     MainView()
 }

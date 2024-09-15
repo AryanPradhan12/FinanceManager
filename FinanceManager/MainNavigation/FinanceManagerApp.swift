@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct FinanceManagerApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
             MainView()
