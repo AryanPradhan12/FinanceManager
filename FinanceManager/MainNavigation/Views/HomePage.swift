@@ -10,6 +10,7 @@ import SwiftUI
 struct HomePage: View {
     @StateObject var viewModel = HomePageViewModel()
     @StateObject var viewModel2 = ProfileViewModel()
+    @ObservedObject var viewModel1: FinanceInterestViewModel
     @State private var showDropdown = false
     
     var body: some View {
@@ -88,9 +89,22 @@ struct HomePage: View {
                             .font(.system(size: 25))
                             .foregroundColor(.black)
                         
-                        RoundedRectangle(cornerRadius: 25)
-                            .fill(Color.gray)
-                            .frame(width: 340, height: 250)
+                        if viewModel1.selectedOptions.isEmpty {
+                                            RoundedRectangle(cornerRadius: 10)
+                                                .frame(height: 100)
+                                                .foregroundColor(.gray)
+                                                .overlay(Text("No Options Selected").foregroundColor(.white))
+                                                .padding()
+                                        } else {
+                                            // Display articles for the selected options
+                                            ForEach(viewModel1.articleLinks, id: \.self) { article in
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .frame(height: 100)
+                                                    .foregroundColor(.blue)
+                                                    .overlay(Text(article).foregroundColor(.white))
+                                                    .padding(.horizontal)
+                                            }
+                                        }
                         
                         Spacer()
                     }
@@ -165,5 +179,5 @@ struct GalleryView: View {
 }
 
 #Preview {
-    HomePage()
+    HomePage(viewModel1: FinanceInterestViewModel())
 }

@@ -13,7 +13,7 @@ struct MainView: View {
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty {
             TabView {
                 
-                HomePage()
+                HomePage(viewModel1: FinanceInterestViewModel())
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
