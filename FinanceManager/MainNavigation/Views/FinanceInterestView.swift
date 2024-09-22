@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
 
 struct FinanceInterestView: View {
     @StateObject var viewModel1 = FinanceInterestViewModel()
@@ -19,11 +21,9 @@ struct FinanceInterestView: View {
                         .foregroundColor(.black)
                         .bold()
                     
-                    // Display the selected options
                     InterestDisplayView(viewModel1: viewModel1)
                         .padding()
                     
-                    // Display the available options as buttons
                     ForEach(viewModel1.availableOptions, id: \.self) { option in
                         Button(action: {
                             viewModel1.selectOption(option)
@@ -42,6 +42,9 @@ struct FinanceInterestView: View {
                 }
             }
         }
+        .onAppear {
+            viewModel1.fetchSelectedOptions() // Fetch options on appear
+        }
     }
 }
 
@@ -50,41 +53,25 @@ struct InterestDisplayView: View {
     
     var body: some View {
         VStack {
-            if viewModel1.articleLinks.isEmpty {
+            if viewModel1.selectedOptions.isEmpty {
                 RoundedRectangle(cornerRadius: 10)
                     .frame(height: 100)
                     .foregroundColor(.gray)
-                    .overlay(Text("No Articles Available").foregroundColor(.white))
+                    .overlay(Text("No Selected Options").foregroundColor(.white))
                     .padding()
             } else {
-                // Display articles for the selected options
-                ForEach(viewModel1.articleLinks) { article in
-                    NavigationLink(destination: SafariView(url: URL(string: article.link)!)) {
-                        HStack {
-                            Image(article.imageName)
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                                .cornerRadius(10)
-                            VStack(alignment: .leading) {
-                                Text(article.title)
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                Text("Read more...")
-                                    .font(.subheadline)
-                                    .foregroundColor(.blue)
-                            }
-                            .padding()
-                        }
+                // Display the selected options
+                ForEach(viewModel1.selectedOptions, id: \.self) { option in
+                    Text(option)
+                        .font(.headline)
+                        .padding()
                         .background(RoundedRectangle(cornerRadius: 10).fill(Color.blue.opacity(0.2)))
                         .padding(.horizontal)
-                    }
                 }
             }
-
         }
     }
 }
-
 
 #Preview {
     FinanceInterestView()
